@@ -24,6 +24,86 @@ html {
   scroll-behavior: smooth;
 }
 
-html {
+body {
   font-family: 'Jost', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 25px 15%;
+  transition: 0.3s ease;
+}
+
+.logo {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar li a {
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.navbar li a::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--main-color);
+  left: 0;
+  bottom: -4px;
+  transition: 0.4s ease;
+}
+
+.navbar li a:hover::after {
+  width: 100%;
+}
+
+#menu-icon {
+  font-size: 32px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.h-btn {
+  padding: 0 20px;
+  height: 40px;
+  display: inline-block;
+  line-height: 42px;
+  background: var(--main-color);
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.h-btn:hover {
+  transform: translateY(-5px);
 }

@@ -175,3 +175,20 @@ span {
   top: 6px;
   right: 6px;
 }
+
+/* INFO: Add Sticky Navigation Effect */
+header.sticky {
+  padding: 12px 15%;
+  background: var(--main-color);
+}
+
+.sticky .navbar a::after {
+  background-color: var(--text-color);
+}
+
+.sticky .h-btn {
+  background: var(--text-color);
+  color: #000;
+}
+
+/* About */

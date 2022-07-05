@@ -413,3 +413,16 @@ form textarea {
   transform: translateY(-8px);
   cursor: pointer;
 }
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--second-bg-color);
+  padding: 34px;
+}
+
+footer p {
+  font-size: 17px;
+  color: var(--second-color);
+  letter-spacing: 1px;
+}
